@@ -41,6 +41,7 @@ function downloadImage() {
       document.body.removeChild(link);
       popup.style.opacity = 0;
       popup.style.visibility = "hidden";
+      name = ''
     });
   } else {
     document.querySelector(".popup p").style.display = "block";
