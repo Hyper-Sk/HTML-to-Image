@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - xyz Company</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="capture">
+        <form action="" class="form-main">
+            <table class="table">
+                <tr class="logo_tr">
+                    <td colspan="6" class="logo_td">
+                        <img src="xpress_logo.png" alt="logo" class="logo">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="6" class="header_info" style="border: none;">
+                        <p>Ph: 1300 779 438 | Fax: 02 9642 4709 | taxitrucks@swifttrans.com.au | www.swifttrans.com.au |
+                            ABN 51 657 288 367 ACN 657 288 367</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Sales Person:</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ex: Name">
+                    </td>
+                    <td>
+                        <span>Client Account Code: (Office Use Only)</span>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>ex: Company Name:</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ex: Access Hardware PVT LTD.">
+                    </td>
+                    <td colspan="2">
+                        <span>ABN :</span>
+                        <input type="text" placeholder="ex: 34 006 426 820">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Business Address:</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ex: 3/5-9 Ricketty St, Mascot">
+                    </td>
+                    <td>
+                        <span>State</span>
+                        <input type="text" placeholder="NSW">
+                    </td>
+                    <td>
+                        <span>
+                            Postcode
+                        </span>
+                        <input type="text" placeholder="2020">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Postal Address:</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ex: P.O. Box 1134 Mascot">
+                    </td>
+                    <td>
+                        <span>
+                            State
+                        </span>
+                        <input type="text" placeholder="NSW">
+                    </td>
+                    <td>
+                        <span>
+                            Postcode
+                        </span>
+                        <input type="text" placeholder="1460">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Telephone Main:</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ex: (02) 9669 1100">
+                    </td>
+                    <td>
+                        <span>Mob:</span>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <span>Fax:</span>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ex: example@gmail.com">
+                    </td>
+                    <td colspan="1">
+                        <span>POD (y/n):</span>
+                        <input type="text" placeholder="">
+                    </td>
+                    <td colspan="1">
+                        <span>Daily Billing:</span>
+                        <input type="text" placeholder="">
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Accounts Contact:</th>
+                    <td rowspan="2" colspan="3">
+                        <input type="text">
+                    </td>
+                    <td rowspan="2" colspan="2" style="padding:0%; border: none;">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Accounts Email:">
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <input type="text" placeholder="Telephone:">
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <th rowspan="2">Authorising Officer:</th>
+                    <td rowspan="2" colspan="3">
+                        <input type="text">
+                    </td>
+                    <td rowspan="2" colspan="2" style="padding:0%; border: none;">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Position:">
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <input type="text" placeholder="Telephone:">
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+
+                <tr>
+                    <th>Type Of Business: Officer:</th>
+                    <td colspan="1">
+                        <span>Pty Ltd</span>
+                        <input type="checkbox" value="1" name="option1" onclick="selectOnlyThis1(this)">
+                    </td>
+                    <td colspan="1">
+                        <span>Solo Trader</span>
+                        <input type="checkbox" value="1" name="option1" onclick="selectOnlyThis1(this)">
+                    </td>
+                    <td colspan="1">
+                        <span>Partnership</span>
+                        <input type="checkbox" value="1" name="option1" onclick="selectOnlyThis1(this)">
+                    </td>
+                    <td colspan="1">
+                        <span>Trust</span>
+                        <input type="checkbox" value="1" name="option1" onclick="selectOnlyThis1(this)">
+                    </td>
+                    <td colspan="1">
+                        <span>Other</span>
+                        <input type="checkbox" value="1" name="option1" onclick="selectOnlyThis1(this)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Special Conditions:</th>
+                    <td colspan="5">
+                        <input type="text">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>Type of Services:</th>
+                    <td colspan="5">
+                        <input type="text" placeholder="Service type">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>Trade References:</th>
+                    <td colspan="2">
+                        <input type="text" placeholder="ex: Company Name" style="margin-bottom:10px;">
+                        <input type="text" placeholder="ex: Company Name" style="margin-bottom:10px;">
+                        <input type="text" placeholder="ex: Company Name" style="margin-bottom:0px;">
+
+                    </td>
+                    <td colspan="1">
+                        <p>Contact name & telephone</p>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" placeholder="ex: Company Name" style="margin-bottom:10px;">
+                        <input type="text" placeholder="ex: Company Name" style="margin-bottom:10px;">
+                        <input type="text" placeholder="ex: Company Name" style="margin-bottom:0px;">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>Name of Bank:</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ANZ">
+                    </td>
+                    <td colspan="2">
+                        <span>BSB</span>
+                        <input type="text" placeholder="ex: 000000">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>Name of Account Holder:</th>
+                    <td colspan="3">
+                        <input type="text" placeholder="ex: Access Hardware">
+                    </td>
+                    <td colspan="2">
+                        <span>Account No.</span>
+                        <input type="text" placeholder="ex:">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <th>CREDIT LIMIT REQUIRED:</th>
+                    <td colspan="5">
+                        <input type="text">
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>PAYMENT MEHTOD:</th>
+                    <td colspan="2">
+                        <span>Direct Deposit</span>
+                        <input type="checkbox" value="1" name="option2" onclick="selectOnlyThis2(this)">
+                    </td>
+                    <td colspan="1">
+                        <span>Direct Deposit</span>
+                        <input type="checkbox" value="1" name="option2" onclick="selectOnlyThis2(this)">
+                    </td>
+                    <td colspan="2">
+                        <span>Direct Deposit</span>
+                        <input type="checkbox" value="1" name="option2" onclick="selectOnlyThis2(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="header_info" style="border: none;">
+                        <p>SWIFT COURIERS & TAXI TRUCKS PTY LTD IS A NON-COMMON CARRIER. INSURANCE REMAINS THE
+                            RESPONSIBILITY OF THE CONSIGOR</p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="bottom">
+            <h2>
+                TERMS AND CONDITIONS OF CONTRACT WITH SWIFT COURIERS & TAXI TRUCKS PTY LTD.
+            </h2>
+            <h5>
+                THE FOLLOWING CONDITIONS APPLY TO ALL CONTRACTS FOR CARRIAGE OF GOODS IN WHICH- _ (ACN) -„THE PLACING OF
+                AN ORDER BY A CONSIGNOR WITH CARRIER OF GOODS (WHICH IF ACCEPTED BY THE CARRIER) SHALL CONSTITUTE ASSENT
+                BY THAT CONSIGNOR TO BE BOUND BY THE CONDITIONS HEREIN
+            </h5>
+            <textarea name="" id="" placeholder="ex: description "></textarea>
+
+        </div>
+    </div>
+
+
+    <div class="buttons">
+        <button onclick="showPopup()" class="download">
+            Download
+        </button>
+        <!-- <button onclick="saveAs()" class="saveas">
+            Save As
+        </button> -->
+        <button onclick="pageReload()" class="clear">
+            Clear Fields
+        </button>
+    </div>
+
+    <div class="popup">
+            <h2>Enter File Name</h2>
+            <input type="text" required name="popup_input" >
+            <p>Please Enter File name</p>
+            <button class="download" onclick="downloadImage()">Download</button>
+            <button class="close" onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
